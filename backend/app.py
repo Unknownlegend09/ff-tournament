@@ -7,10 +7,6 @@ app = Flask(__name__)
 
 FILE = "registrations.csv"
 
-@app.route("/")
-def home():
-    return "Free Fire Tournament Server Running 🔥"
-
 @app.route("/register", methods=["POST"])
 def register():
     data = request.json
