@@ -1,0 +1,145 @@
+{
+  "identity": {
+    "name": "E1",
+    "archetype": "Electric & Neon",
+    "vibe": "Aggressive, High-Voltage, Competitive",
+    "principles": [
+      "Fusion over Imitation: Mix Gaming UI with Fintech precision",
+      "Emotion First: Every interaction feels like a 'kill confirm'",
+      "Content is King: Tournaments are the hero",
+      "Zoom In: Focus on prize pools and entry fees",
+      "Negative Space: Don't clutter, let the neon breathe",
+      "Contrast: Blackest blacks vs Brightest neons"
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Rajdhani",
+      "body": "Manrope"
+    },
+    "weights": {
+      "heading": "700 (Bold) or 600 (SemiBold)",
+      "body": "400 (Regular) or 500 (Medium)"
+    },
+    "usage": {
+      "h1": "text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none",
+      "h2": "text-3xl md:text-5xl font-bold uppercase tracking-tight",
+      "h3": "text-xl md:text-2xl font-semibold uppercase tracking-wide text-primary",
+      "body": "text-base md:text-lg text-muted-foreground leading-relaxed",
+      "label": "text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground"
+    },
+    "import_instruction": "Add this to index.css: @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Rajdhani:wght@500;600;700&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "primary": "#FACC15",
+      "primary_foreground": "#000000",
+      "secondary": "#EF4444",
+      "background": "#020617",
+      "surface": "#0F172A",
+      "border": "#1E293B",
+      "accent": "#22D3EE"
+    },
+    "css_variables": {
+      "root": {
+        "--background": "222.2 84% 4.9%",
+        "--foreground": "210 40% 98%",
+        "--card": "222.2 84% 4.9%",
+        "--card-foreground": "210 40% 98%",
+        "--popover": "222.2 84% 4.9%",
+        "--popover-foreground": "210 40% 98%",
+        "--primary": "47.9 95.8% 53.1%",
+        "--primary-foreground": "26 83.3% 14.1%",
+        "--secondary": "0 84.2% 60.2%",
+        "--secondary-foreground": "210 40% 98%",
+        "--muted": "217.2 32.6% 17.5%",
+        "--muted-foreground": "215 20.2% 65.1%",
+        "--accent": "217.2 32.6% 17.5%",
+        "--accent-foreground": "210 40% 98%",
+        "--destructive": "0 62.8% 30.6%",
+        "--destructive-foreground": "210 40% 98%",
+        "--border": "217.2 32.6% 17.5%",
+        "--input": "217.2 32.6% 17.5%",
+        "--ring": "47.9 95.8% 53.1%"
+      }
+    },
+    "rules": [
+      "Use gradients sparingly, only for 'Live' or 'Hot' elements",
+      "Backgrounds must be deep blue-black (#020617), never pure black",
+      "Borders should be subtle (#1E293B) unless active/hovered",
+      "Text contrast must be high (White on Dark)"
+    ]
+  },
+  "visual_enhancers": {
+    "borders": "1px solid rgba(255, 255, 255, 0.1)",
+    "shadows": "0 0 20px -5px rgba(250, 204, 21, 0.15)",
+    "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10",
+    "gradients": {
+      "hero": "bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent",
+      "button": "bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-300 hover:to-orange-400"
+    },
+    "textures": "Use a subtle noise texture overlay on the main background to reduce digital flatness"
+  },
+  "layout_strategies": {
+    "marketing": {
+      "grid": "Tetris Grid (Mode A)",
+      "spacing": "Generous (gap-8 to gap-12)",
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    },
+    "dashboard": {
+      "grid": "Control Room Grid (Mode B)",
+      "spacing": "Tight (gap-4)",
+      "sidebar": "Fixed width (w-64) hidden md:block",
+      "container": "flex h-screen overflow-hidden"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-none skew-x-[-10deg] bg-primary text-primary-foreground font-bold uppercase tracking-wider hover:shadow-[0_0_20px_rgba(250,204,21,0.5)] transition-all duration-300",
+      "secondary": "rounded-none border border-primary/50 text-primary hover:bg-primary/10 font-bold uppercase tracking-wider"
+    },
+    "cards": {
+      "tournament": "group relative overflow-hidden rounded-xl border border-border bg-card hover:border-primary/50 transition-colors duration-300",
+      "stats": "p-6 rounded-xl bg-card border border-border flex flex-col gap-2"
+    },
+    "inputs": {
+      "default": "bg-background/50 border-border focus:border-primary focus:ring-1 focus:ring-primary rounded-md"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "defaults": {
+      "hover": { "scale": 1.02, "transition": { "duration": 0.2 } },
+      "tap": { "scale": 0.98 },
+      "entrance": { "opacity": 0, "y": 20, "transition": { "duration": 0.5 } }
+    },
+    "special": {
+      "glitch": "Use for main headings on hover",
+      "marquee": "Use for 'Live Tournaments' ticker"
+    }
+  },
+  "image_urls": {
+    "hero_bg": "https://images.pexels.com/photos/13930769/pexels-photo-13930769.jpeg",
+    "tournament_placeholder": "https://images.pexels.com/photos/7862599/pexels-photo-7862599.jpeg",
+    "gamer_context": "https://images.pexels.com/photos/7777517/pexels-photo-7777517.jpeg",
+    "payment_proof_example": "https://images.pexels.com/photos/7792053/pexels-photo-7792053.jpeg"
+  },
+  "instructions_to_main_agent": [
+    "INSTALL: npm install framer-motion lucide-react clsx tailwind-merge",
+    "SETUP: Update tailwind.config.js to include the custom colors and fonts.",
+    "SETUP: Add the Google Fonts import to index.css.",
+    "SETUP: Update the CSS variables in index.css to the 'Electric & Neon' palette provided.",
+    "DEV: Create a 'Layout' component that handles the Sidebar (for Admin) and Navbar (for Users).",
+    "DEV: Use 'sonner' for all notifications (Success/Error).",
+    "DEV: Ensure all images have alt text and are optimized.",
+    "DEV: For the Payment Proof upload, create a drag-and-drop zone using standard HTML input type='file' styled with Tailwind.",
+    "CRITICAL: The Admin Dashboard must be dense. Use tables for user lists and tournament lists.",
+    "CRITICAL: The User Tournament Page must be visual. Use large cards with images."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for text unless it's a main heading.",
+    "Always use 'cursor-pointer' on interactive elements.",
+    "Ensure mobile responsiveness. Stack grids on mobile.",
+    "Use 'data-testid' for all interactive elements."
+  ]
+}
